@@ -1,0 +1,83 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+background-color:#f9e2f9;
+}
+#container{
+width:800px;
+height:800px;
+margin-left:400px;
+
+}
+#inp{
+width:475px;
+height:38px;
+/* margin-left:200px; */
+margin-top:50px;
+box-shadow:0.5px 0.5px grey;
+border-radius:0 5px 5px 0;
+}
+#serachInp{
+padding:10px;
+height:18px;
+width:400px;
+border:none;
+}
+
+#IconDiv{
+height:38px;
+background-color:#ef105f;
+float:right;
+padding:2px 15px 2px 15px;
+border-radius:0 5px 5px 0;
+border:none;
+}
+#srchIcon{
+margin-top:5px;
+}
+#card{
+height:320px;
+width:200px;
+border:0.5px solid ;
+margin-top:50px;
+/* margin-left:200px; */
+position:relative;
+background-color:white;
+}
+#cardImg{
+height:160px;
+width:160px;
+margin:20px;
+
+}
+#likeicon{
+opacity:0.5px;
+position:absolute;
+top:10px;
+right:10px;
+}
+#priceOriginal{
+font-size:30px;
+margin:20px;
+}
+#priceThrough{
+font-size:10px;
+text-decoration:line-through;
+margin:20px;
+color:grey;
+}
+#addToCart{
+width:160px;
+margin:20px 20px 20px 20px;
+padding:3px;
+background-color:#ef105f;
+border:none;
+}
+#cart{
+height:18px;
+padding:2px 14px 0px 0px;
+margin-left:2px;
+float:right;
+}
