@@ -81,7 +81,7 @@ ul li:hover {
     background-color: #ffbe0b;
 }
 
-#middle {
+/* #middle {
     height: 600px;
     width: 1400px;
 
@@ -179,16 +179,215 @@ ul li:hover {
 }
 
 #midBox3 {
-    /* background-color:#72efdd; */
+    background-color:#72efdd;
     background-color: rgb(125 215 186);
-    /* border:none; */
+    border:none;
 
 }
 
 .midBox:hover {
     cursor: pointer;
 
+} */
+/* #parent {
+    height: 610px;
+    width: 1400px;
+    position:relative;
+	margin:auto;
+  }
+  .path-parent {
+    height: 123.3px;
+    width: 165px;
+    background-color: aqua;
+    float: left;
+	padding:40px 50px 40px 30px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	line-height:10px;
+	border-right:5px solid white;
+  }
+  .lightText {
+    font-weight: lighter;
+    font-size: 33px;
+    font-style: normal;
+    opacity: 0.5;
+    letter-spacing: 1px;
 }
+  .clip-path {
+    height: 203.3px;
+    width: 30px;
+    background-color: rgb(125 215 186);
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+    float: left;
+    display: none;
+	visibility:hidden;
+	
+  }
+  .path-parent:hover + .clip-path {
+    display: block;
+	visibility:visible;
+	
+  }
+  .path-parent:hover{
+  border:none;
+  }
+  #child1{
+  width:200px;
+  height:610px;
+  float:left;
+  background-color:red;
+  }
+  #backImg{
+  height:610px;
+  width:1200px;
+    background-image:url("../images/demo.jpg") ;
+	background-size:cover;
+	float:left;
+  }
+  #child2{
+  width:400px;
+  position:absolute;
+  }
+  #path-parent1, #clip-path1{
+  background-color:rgb(255 202 34);
+  }
+  #path-parent2, #clip-path2{
+  background-color:green;
+  }
+  #path-parent3,#clip-path3{
+  background-color:aqua;
+  }
+  #imgTextDiv {
+    margin-top: 450px;
+    display: inline-block;
+}
+
+.imgText {
+    background-color: black;
+    color: white;
+    padding: 5px 15px 5px 65px;
+}
+
+#imgText1 {
+    font-size: 45px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-left: 450px;
+}
+
+#imgText2 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 750px;
+} */
+
+ #parent {
+    height: 610px;
+    width: 1400px;
+    position:relative;
+	margin:auto;
+  }
+  .path-parent {
+    height: 123.3px;
+    width: 165px;
+    background-color: aqua;
+    float: left;
+	padding:40px 50px 40px 30px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	/* line-height:10px; */
+	border-right:5px solid white;
+  }
+  .lightText {
+    font-weight: lighter;
+    font-size: 33px;
+    font-style: normal;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+  .clip-path {
+    height: 203.3px;
+    width: 30px;
+    /* background-color: rgb(125 215 186); */
+       clip-path:polygon(15% 0%, 100% 50%, 0% 100%, 0% 0%);
+    float: left;
+    /* display: none;  */
+	visibility:hidden;
+	
+  }
+  .path-parent:hover + .clip-path {
+    display: block;
+	visibility:visible;
+	
+  }
+  .path-parent:hover{
+  border:none;
+  }
+  .border{
+  height:200px;
+  width:25px;
+  background-color:rgb(255 202 34);
+  clip-path: polygon(0% 0%, 100% 50%, -10% 100%, 0% 0%);
+  }
+  #child1{
+  width:200px;
+  height:610px;
+  float:left;
+  background-color:red;
+  }
+  #backImg{
+  height:610px;
+  width:1200px;
+    background-image:url("../images/demo.jpg") ;
+	background-size:cover;
+	float:left;
+  }
+  #child2{
+  width:400px;
+  position:absolute;
+  }
+  #path-parent1{
+   background-color:rgb(255 202 34);
+  }
+  #path-parent2, #border2{
+  background-color:green;
+  }
+  #path-parent3, #border3{
+  background-color:aqua;
+  }
+  #clip-path1{
+  background-color:white;
+  }
+  #clip-path2{
+  background-color:white;
+  }
+  #clip-path3{
+  background-color:white;
+  }
+  #imgTextDiv {
+    margin-top: 450px;
+    display: inline-block;
+}
+
+.imgText {
+    background-color: black;
+    color: white;
+    padding: 5px 15px 5px 65px;
+}
+
+#imgText1 {
+    font-size: 45px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-left: 450px;
+}
+
+#imgText2 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 750px;
+}
+
 
 #storyMainDiv {
     height: 435px;
