@@ -728,6 +728,9 @@ ul li:hover {
     color: rgb(231, 223, 223);
     
   }
+#Username,#Password:focus{
+    outline: none;
+}
 #labelUsername,#labelPassword{
    color: rgb(251, 249, 249);
    font-size: 20px;
