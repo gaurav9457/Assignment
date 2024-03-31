@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	.btn{
+	padding:14px 20px;
+	background-color:green;
+	border:none;
+	margin:10px;
+	color:white;
+	cursor:pointer;
+	border-radius:5px;
+	margin-left:15px;
+	}
+	#displayForm{
+	height:300px;
+	width:500px;
+	background-color:wheat;
+	margin:auto;
+	}
+	#dispBtn{
+		background-color: rgb(24, 132, 178);
+		color: white;
+		box-shadow: 3px 3px 5px black;
+		border: 1px solid;
+	}
+	#dispBtn:hover{
+		background-color: white;
+		color:  rgb(24, 132, 178);
+		box-shadow: none;
+		border: 1px solid;
+	}
+	#addBtn{
+		background-color: green;
+		color: white;
+		box-shadow: 3px 3px 5px black;
+		border: 1px solid;
+	}
+	#addBtn:hover{
+		background-color: white;
+		color: green;
+		box-shadow: none;	
+		border: 1px solid;
+	}
+	td {
+  padding: 25px 15px 15px 40px;
+  margin-left:50px;
+  
+}
+tr{
+	margin-top: 50px;
+}
+	input{
+	padding:8px;
+	}
+	#btnDiv{
+	margin-left:150px;
+	}
+	.formLable{
+	font-size:20px;
+	}
+	#displayContent{
+	/* height:200px;
+	width:200px; */
+	border:1px solid;
+	padding:15px;
+	display:none;
+	}
+	#displayChild{
+	height:200px;
+	width:210px;
+	border:1px solid;
+	padding:15px;
+	display:none;
+	display:inline-block;
+	}
+
+  </style>
+ </head>
+ <body>
+  <h1 style="color:tomato;text-align:center;"> FORM</h1>
+    <div id="parent">
+
+        <div id="displayForm">
+            <form action="" onsubmit=" " id="formObj">
+                <table>
+				     <tr >
+                        <td><label for="" class="formLable">Employee-Id : </label></td>
+                        <td><input type="number" name="" id="Id"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="" class="formLable" >Name : </label></td>
+
+                        <td><input type="text" name="" id="Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="" class="formLable">Age : </label></td>
+                        <td><input type="number" name="" id="age"></td>
+                    </tr>              
+                </table>
+            </form>
+			<div id="btnDiv" class="">
+				<button onclick="add()" class='btn' id="addBtn">ADD</button>
+			<button onclick="display1()" class='btn' id="dispBtn">DISPLAY</button>
+			</div>
+			
+        </div>
+
+		<div id="displayContent" class="">
+			<div id="displayChild" class="">
+				
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		let arr=[];
+
+		   function add(){
+		     let id=document.getElementById("Id").value;
+			 let name=document.getElementById("Name").value;
+			 let age=document.getElementById("age").value;
+
+			// console.log("form=",id , name , age);
+			 
+			 let storedObj={
+			 id:id,
+			 name:name,
+			 age:age
+			 }
+              arr.push(storedObj);
+			 console.log(arr);
+
+			 document.getElementById("Id").value="";
+			 document.getElementById("Name").value="";
+			 document.getElementById("age").value="";
+
+		   }
+
+
+		    function display1(){
+			    let displayContent = document.getElementById("displayContent");
+				let displayChild = document.getElementById("displayChild");
+			    displayContent.innerHTML = "";
+				displayContent.style.display='block';
+
+			    if(arr.length > 0){
+					arr.forEach(function(obj, index){
+						
+						displayContent.innerHTML += "<h2>Person " + (index + 1) + "</h2>";
+						
+						//displayContent.innerHTML += "* ID: " + obj.id +"<br>"+ "* Name: " + obj.name +"<br>"+ "* Age: " + obj.age + "<br>";
+                        displayContent.innerHTML +="<ul><li> Id = "+obj.id+"</li>"+"<li> Name = "+obj.name+"</li>"+"<li> Age = "+obj.age+"</li> </ul>";
+					});
+
+				} else {
+				    
+				    displayContent.innerHTML = "Details not found display";
+				}  
+		   }  
+		</script>
+ </body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Generator" content="EditPlus®" />
+    <meta name="Author" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Html</title>
+    <style>
+      #parent {
+        height: 610px;
+        width: 1400px;
+        position: relative;
+      }
+      .path-parent {
+        height: 203.3px;
+        width: 200px;
+        background-color: aqua;
+        float: left;
+      }
+      .clip-path {
+        height: 203.3px;
+        width: 30px;
+        background-color: rgb(125 215 186);
+        clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+        float: left;
+        /* display: none;  */
+        visibility: hidden;
+      }
+      .path-parent:hover + .clip-path {
+        /* display: block; */
+        visibility: visible;
+      }
+      #child1 {
+        width: 200px;
+        height: 610px;
+        float: left;
+        background-color: red;
+      }
+      #backImg {
+        height: 610px;
+        width: 1200px;
+        background-image: url("banner.jpg");
+        background-size: cover;
+        float: left;
+      }
+      #child2 {
+        width: 400px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child1" class=""></div>
+      <div id="backImg" class=""></div>
+
+      <div id="child2" class="">
+        <h1>MAKE</h1>
+				<p class="lightText">DONATIONS</p>
+        <div class="path-parent"></div>
+        <div class="clip-path"></div>
+      </div>
+      <div id="child2" class="">
+        <div class="path-parent"></div>
+        <div class="clip-path"></div>
+      </div>
+
+    </div>
+  </body>
+</html>
