@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+       <div id="formDiv">
+        <form action="">
+            <label for="fname">First Name : </label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+             <br>
+            <label for="lname">Last Name : </label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <br>
+            <label for="email">Email-id : </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="mob">Mobile no : </label>
+            <input type="number" name="mob" id="mobile">
+            <br>
+            <label for="dob">Date Of Birth : </label>
+            <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY">
+            
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" maxlength="2" minlength="1">
+            <br>
+            <label for="gender">Gender : </label>
+            <input type="radio" name="gender" id="gender" value="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="gender" value="female"><label for="female">Female</label>
+            <br>
+            <label for="country">Country : </label>
+            <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="uk">Uk</option>
+                <option value="us">US</option>
+            </select>
+           <br>
+           <label for="Skills">Techinical Skills : </label>
+                <input type="checkbox" name="Skills" id="java" value="Java"><label for="">Java</label>
+                <input type="checkbox" name="Skills" id="html" value="Html"><label for="">Html</label>
+                <input type="checkbox" name="Skills" id="css" value="Css"><label for="">CSS</label>
+                <input type="checkbox" name="Skills" id="javascript" value="Javascript"><label for="">Javascript</label>
+        </form>
+        <button onclick="validation()">Submit</button>
+       </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
