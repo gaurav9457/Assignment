@@ -1,51 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+ </head>
+ <body>
     <div id="container">
        <div id="formDiv">
-        <form action="">
-            <label for="fname">First Name : </label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-             <br>
-            <label for="lname">Last Name : </label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            <br>
-            <label for="email">Email-id : </label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="mob">Mobile no : </label>
-            <input type="number" name="mob" id="mobile">
-            <br>
-            <label for="dob">Date Of Birth : </label>
-            <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY">
+        <form action="" id="formObj">
+		<div id="nameDiv" class="">
+			<label for="fname">First Name : </label> <br>
             
-            <label for="age">Age</label>
-            <input type="number" name="age" id="age" maxlength="2" minlength="1">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."  >
+			
+             </div>
+			 
+             <div id="lnameDiv" class="">
+				<label for="lname">Last Name : </label> <br>
+            
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+             </div>
+            
             <br>
+			<label for="gender">Gender : </label>
+            <input type="radio" name="gender" id="gender" value="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="gender" value="female"><label for="female">Female</label>
+			<input type="radio" name="gender" id="gender" value="Other"><label for="female">Other</label>
+            
+			<div id="dobDiv" class="">
+				<label for="dob">Date Of Birth : </label> <br>
+				
+            <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY" onblur="dateValidate()">
+            </div>
+
+             <div id="ageDiv" class="">
+				<label for="age">Age</label> <br>
+				
+            <input type="number" name="age" id="age" maxlength="2" minlength="1">
+             </div>
+		
+            
+            <br>
+            <label for="mob">Mobile no : </label> <br>
+            
+            <input type="tel" name="mob" id="mobile" minlength=0 maxlength=10>
+            <br>
+			<label for="address">Address</label><br>
+			<textarea name="" id="" cols="60" rows="5" style="margin:10px"></textarea>
+			<br>
+			
+			<div id="cityDiv" class="">
+				<label for="city">City</label>
+				<br>
+				<select name="city" id="city">
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Nashik">Nashik</option>
+				<option value="Jalgaon">Jalgaon</option>
+				<option value="Surat">Surat</option>
+			    <option value="Nagpur">Nagpur</option>
+
+            </select>
+				
+			</div>
+			<!-- <div id="address" class="">
+				<label for="state">State</label>
+				<br>
+				<select name="state" id="state">
+				                <option value="Maharashtra">Maharashtra</option>
+				                <option value="Gaujrat">Gaujrat</option>
+				                <option value="Madhya-pradesh">Madhya-pradesh</option>
+				            </select>
+							<input type="text" id="state" />
+			</div> -->
+			
+            <!-- <div id="dobDiv" class="">
+            				<label for="dob">Date Of Birth : </label> <br>
+            				
+            <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY">
+            </div>
+            
+             <div id="ageDiv" class="">
+            				<label for="age">Age</label> <br>
+            				
+            <input type="number" name="age" id="age" maxlength="2" minlength="1">
+             </div>
+             -->
+            
+            <!-- <br>
             <label for="gender">Gender : </label>
             <input type="radio" name="gender" id="gender" value="male"><label for="male">Male</label>
             <input type="radio" name="gender" id="gender" value="female"><label for="female">Female</label>
+            			<input type="radio" name="gender" id="gender" value="Other"><label for="female">Other</label> -->
             <br>
-            <label for="country">Country : </label>
-            <select name="country" id="country">
-                <option value="india">India</option>
-                <option value="uk">Uk</option>
-                <option value="us">US</option>
-            </select>
+           
            <br>
            <label for="Skills">Techinical Skills : </label>
-                <input type="checkbox" name="Skills" id="java" value="Java"><label for="">Java</label>
-                <input type="checkbox" name="Skills" id="html" value="Html"><label for="">Html</label>
-                <input type="checkbox" name="Skills" id="css" value="Css"><label for="">CSS</label>
-                <input type="checkbox" name="Skills" id="javascript" value="Javascript"><label for="">Javascript</label>
+                <input type="checkbox" name="Skills" class="checkBoxDiv" id="java" value="Java"><label for="">Java</label>
+                <input type="checkbox" name="Skills" class="checkBoxDiv" id="html" value="Html"><label for="">Html</label>
+                
+                <input type="checkbox" name="Skills" class="checkBoxDiv" id="css" value="Css"><label for="">CSS</label>
+                <input type="checkbox" name="Skills" class="checkBoxDiv" id="javascript" value="Javascript"><label for="">Javascript</label>
+				
         </form>
-        <button onclick="validation()">Submit</button>
+		<div id="btn-div" class="">
+			<button onclick="validation()" class="btn" id="submit">Submit</button>
+		<button onclick="document.getElementById('formObj').reset()" class="btn" id="reset">Reset</button>
+		</div>
+        
        </div>
     </div>
     <script src="./js/script.js"></script>
