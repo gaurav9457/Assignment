@@ -2,9 +2,64 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 #container {
   border-radius: 5px;
-  background-color: #e11212;
+  background-color: wheat;
   padding: 20px;
 }
 #formDiv{
-  
+  width:500px;
+  height:600px;
+  margin:auto;
+  /* background-color:green; */
+  padding:20px;
+  border-radius:10px;
+}
+
+#nameDiv,#lnameDiv,#cityDiv,#address,#dobDiv,#ageDiv{
+/* display:inline-block; */
+float:left;
+padding:5px;
+/* background-color:red; */
+/* height:100px; */
+}
+#fname,#lname,#state,#age,#dob{
+display:inline-block;
+padding:9px;
+width:200px;
+border-radius:5px;
+margin:10px;
+border:none;
+}
+#mobile,#city{
+padding:9px;
+width:450px;
+border-radius:5px;
+margin:10px;
+border:none;
+}
+
+#gender{
+width:30px;
+margin:20px;
+
+}
+.checkBoxDiv{
+width:20px;
+margin:10px;
+}
+.btn{
+padding:14px 15px ;
+border:none;
+margin:30px;
+cursor:pointer;
+}
+#btn-div{
+margin-left:100px;
+}
+#submit{
+background-color:green;
+color:white;
+}
+#reset{
+background-color:red;
+color:white;
 }
